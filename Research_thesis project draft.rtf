@@ -1,0 +1,120 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs32\lang9 Abstract\par
+\b0\fs22 Unmanned Ground Vehicles (UGVs) are becoming a crucial component of contemporary technology, with uses in fields like robotics, mapping, autonomous navigation, and environmental monitoring. The accurate integration of sensors, particularly LIDAR, is crucial for obstacle identification and navigation in order to improve their functionality. The design, development, and integration of a sturdy and lightweight mounting structure for LIDAR sensors on UGVs are the main objectives of this study. The main goals are to maximize coverage, optimize the sensor's field-of-view (FOV), and design a modular construction that can be used with different UGV platforms.\par
+Using SolidWorks, three distinct mounting structure configurations were designed and evaluated at the start of the project. Every design was evaluated according to standards including structural stability, flexibility, and sensor coverage. To strike the ideal mix between durability and lightweight construction, the best design was chosen and constructed using aluminum profiles. The final construction satisfies the precision and robustness requirements while providing flexibility to support various sensor configurations for a range of FOV needs.\par
+The manufactured structure's ability to improve the vehicle's operational efficiency was demonstrated through testing and successful integration with a UGV. The design's modularity makes it simple to reconfigure, which makes it appropriate for a variety of applications.\par
+By offering a scalable and adaptable approach for sensor integration, this research makes a substantial addition to UGV technology. The study's findings ensure that UGVs can be adjusted to a range of operational situations and open the door for enhanced autonomous navigation and other sensor-driven applications. The design process, testing procedure, and performance evaluation are covered in more detail in later sections of the study.\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\qj\b\fs28 1.INTRODUCTION\par
+
+\pard\sa200\sl276\slmult1\b0\fs22 According to the most expansive "dictionary" definition, an unmanned ground vehicle (UGV) is any piece of mechanical machinery that travels over the ground and is used for carrying or moving objects, but it specifically does not carry a person.  It takes some organizing concept to address such a vast universe of potential UGV systems, and in reality, a taxonomy of UGV systems might be based on any of the many attributes of each system.The academic community usually refers to UGVs (especially UGVs possessing significant autonomous capabilities) as mobile robots [1].\par
+One of the key challenges in UGV design is developing sensor mounting systems that are both lightweight and structurally robust. The mounting structure must ensure that sensors are placed in a way that maximizes their coverage and efficiency while minimizing additional weight that could affect the vehicle's mobility [2]. Existing solutions often struggle to balance these factors, leading to either overly rigid mounts that limit flexibility or designs that compromise the vehicle's agility and sensor performance. Moreover, most systems do not allow for easy adaptation to different sensor types and UGV configurations, limiting their versatility in real-world applications [3].\par
+This research is motivated by the need to design a modular and adaptable mounting structure that provides optimal sensor placement for LIDAR and other sensors, enhancing the operational capabilities of UGVs. In this study, the AgileX Ranger 4WS 4WD UGV, known for its versatility and robust performance, serves as the base platform for sensor integration. The LIDAR sensors used include the XT32, Falcon Kinetic, and FT120, each offering unique features that make them suitable for different autonomous navigation tasks. By utilizing SolidWorks for detailed 3D modeling and referring to sensor datasheets for accurate integration, this project aims to develop a flexible solution that can be adapted to various UGV platforms. Ultimately, the goal is to improve the adaptability, efficiency, and performance of autonomous systems, contributing to the advancement of robotics technologies and their real-world applications.\par
+\par
+
+\pard\sa200\sl276\slmult1\b\f1\fs32 2. Background\par
+\fs22 2.1 Autonomous Ground Vehicles (UGVs)\par
+\b0 A-UGV (A-unmanned ground vehicle) has been defined by ASTM Committee F45 [4] as an \ldblquote Automatic, Automated, or Autonomous vehicle that operates while in contact with the ground without a human operator\rdblquote , vehicle capable of following a pre programmed path and that does not deviate from the path without human intervention.\par
+The AgileX Ranger 4WS 4WD is a widely used UGV model known for its versatility, durability, and four-wheel-drive capabilities. This model provides a stable platform for sensor integration, making it ideal for autonomous systems requiring precise control and movement in diverse environments. In this project, the AgileX Ranger 4WS 4WD served as the base platform for integrating and testing the mounting structure designed for LIDAR sensors [5].\par
+\b\fs24                                         Picture of AglieX ranger 3-d model \par
+\par
+2.2 What is LIDAR?\par
+\b0 LiDAR, an acronym for \ldblquote light detection and ranging,\rdblquote  is a remote-sensing technology that uses laser beams to measure precise distances and movement in an environment, in real time [6]. LiDAR data can be used to generate everything from detailed topographic maps to the precise, dynamic 3D models that are required to safely guide an autonomous vehicle through a rapidly and constantly changing environment. LiDAR technology is also used to assess hazards and natural disasters such as lava flows, landslides, tsunamis and floods.\b\par
+\par
+\par
+                                         ALL three LIDAR Pictures\par
+2.2.1 LIDAR Technology in Autonomous Systems\par
+\b0\fs22 LIDAR technology works by emitting laser pulses and measuring the time it takes for the light to reflect back from objects in the environment[7]. This process allows LIDAR sensors to create high-resolution 3D point clouds of the surroundings, which are vital for mapping and obstacle detection. The XT32, Falcon Kinetic, and FT120 LIDAR sensors were selected for their high accuracy and ability to provide detailed environmental data, even in complex terrain. The correct positioning of these sensors is crucial to ensure that they cover the necessary area without interference. In this research, particular attention was given to designing a mounting structure that ensures optimal sensor alignment and maximum FOV, enabling the UGV to operate autonomously and effectively.\par
+           \par
+\par
+\b                                        LIDAR ON AUTONOMOUS SYSTEM PICTURE\b0\par
+\b\fs24 2.3 Sensor Mounting Systems in Robotics\par
+\b0\fs22 In autonomous systems, attaching sensors\f2\emdash especially LIDAR\emdash is a major challenge. For the sensors to be properly aligned and stable across a range of operating circumstances, a sturdy and adaptable mounting solution is required. Additionally, mounting methods need to take climatic variables, sensor field-of-view, and vibration into consideration. The mounting mechanism for this project was made to support several sensor models, such as the FT120, Falcon Kinetic, and XT32 LIDARs, each of which has unique positioning needs. Because the sensor configuration may vary based on the particular mission or operating requirements, the framework also required to be flexible. For the frame, aluminum 30x30 T-slot rails were used because of their strength, adaptability, and simplicity of installation. \par
+\b\f1\fs24 2.4 CAD Software and Prototyping in Robotics\par
+\b0\fs22 Computer-Aided Design (CAD) software is an essential tool in the development of robotic systems. SolidWorks was used in this project to design the mounting structure, as it offers advanced features for modeling, simulation, and stress analysis. The 3D CAD models of the AgileX Ranger 4WS 4WD and the LIDAR sensors (XT32, Falcon Kinetic, and FT120) were used to evaluate the mounting points and assess the design's performance before physical fabrication. The simulation tools in SolidWorks enabled the testing of different mounting configurations and helped identify potential issues related to sensor alignment, stability, and field-of-view. Following the design phase, a prototype was fabricated using 30x30 aluminum T-slot rails, which are widely used in robotics for their versatility and strength. The T-slot rails allow for easy assembly and adjustments, making them an ideal choice for creating a modular and customizable mounting system.\par
+\par
+\b                                                           Solidworks Picture.\par
+\fs24 2.6 Material Selection for Structures\fs22\par
+\b0 One of the most important steps in ensuring the system's strength and flexibility is the mounting structure's material selection. In this project, the physical characteristics required to sustain the sensors and UGV components as well as the design standards drove the material selection. With the help of the manufacturer, it was possible to obtain the 3D CAD models for the AgileX Ranger 4WS 4WD UGV and the LIDAR sensors, which included important specifications and precise measurements. With the help of the manufacturer, it was feasible to precisely measure the sensors' size and location of mounting points, guaranteeing that they would work with the current design.\par
+Because of their exceptional strength-to-weight ratio, resistance to corrosion, and ease of modification, aluminum 30x30 T-slot rails were chosen as the material for the mounting structure. Because of its ease of adjustment, this material was especially well-suited for enabling adaptable sensor setups according to mission requirements. The aluminum rails also provided a sturdy foundation for mounting the sensors securely while reducing extra weight, which is essential for preserving the UGV's performance and agility.\par
+\par
+\b\par
+\par
+                                      PROFILES PICTURE AND DESIGN PICTURES\par
+\b0\par
+.\par
+\b\fs24\par
+\fs22\par
+
+\pard\sa200\sl276\slmult1\b0\f0\par
+\b\fs32 3 Research Methodology\b0\fs22\par
+The research methodology employed in this project focused on designing a robust and flexible mounting structure for LIDAR sensors to be integrated with unmanned ground vehicles (UGVs). The methodology consisted of several stages, including data acquisition, design, simulation, prototyping, and testing. Below is a detailed description of the key steps followed in the research process.\par
+\b 3.1 Data Acquisition and Initial Design\b0\par
+The initial phase involved obtaining 3D CAD designs for both the UGV and the LIDAR sensors from the manufacturer. This step was crucial as it allowed for precise measurements and alignment of the components, even though the physical parts were not available at the start of the project. By acquiring these designs, we were able to perform early-stage simulations and analyses within SolidWorks [8], a powerful CAD software used for modeling and simulations. These digital models were essential for carrying out virtual measurements and evaluating different mounting configurations without the need for immediate physical prototypes.\par
+\par
+\b\par
+                Solid works simulated desgin picture of the LIDAR'S AND UGV\par
+\par
+3.2 Design and Simulation Using SolidWorks\par
+\b0 Using the 3D CAD models, we created several design iterations of the mounting structure. The SolidWorks platform allowed us to simulate the structural integrity and performance of the designs, including stress analysis and vibration testing. We also optimized the Field of View (FOV) of the LIDAR sensors to ensure maximum operational efficiency, accounting for various sensor angles and mounting positions. By conducting these simulations, we were able to refine the design, ensuring that the mounting structure met the required specifications for stability and flexibility.\par
+\par
+\par
+\b                               Falcon kinetic mounted on the rail picture\par
+\b0\par
+\b 3.3 Prototype Development and Material Selection\b0\par
+To further evaluate the design, we moved on to prototyping. One of the challenges encountered during the design phase was the need for a material that could withstand the environmental conditions typically faced by UGVs. To address this, we used high-temperature-resistant material to 3D print a prototype of the mounting frame for one of the sensors. This allowed for a more tangible evaluation of the mounting design, including assessing the fit, durability, and flexibility of the structure in real-world conditions. The 3D printed prototype provided valuable insights into the mounting structure\rquote s practical viability and allowed for adjustments before proceeding to full-scale fabrication.\par
+
+\pard\fi2340\sa200\sl276\slmult1\par
+
+\pard\fi1530\sa200\sl276\slmult1\tx1710\tx1800\b\fs28 Picture of the mouting frame with specifications \b0\fs22\par
+
+\pard\sa200\sl276\slmult1\b 3.4 Fabrication and Integration\b0\par
+Following the validation of the prototype, the next step was to fabricate the final mounting structure using aluminum profiles, chosen for their strength-to-weight ratio and corrosion resistance. The structure was fabricated with precision, ensuring that it met the design specifications derived from the simulations and prototypes. Once fabricated, the mounting structure was integrated with the UGV and the LIDAR sensors. This integration process was carefully managed to ensure that all components fit together seamlessly and that the sensors were securely positioned for optimal performance.\par
+\par
+\b MOUNTING FRAME PICTURE OF ALL THREE THINGS RAIL,SENSRO AND FRAME\par
+\par
+3.5 Testing and Evaluation\par
+\b0 Finally, extensive testing was conducted to evaluate the performance of the mounting structure. This included testing the alignment and stability of the sensors, as well as verifying the Field of View (FOV) of the LIDAR sensors under different operating conditions. The testing phase also involved assessing the flexibility of the structure in accommodating different sensor configurations and adjusting the mounting positions for optimal sensor coverage.\par
+\par
+\par
+\b\fs32 4. Designs and Design Solution.\b0\fs22\par
+
+\pard\sa200\sl276\slmult1\b\f1\par
+\b0\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\b\fs32\par
+References:\par
+\b0\fs22 1. Gage D.W. UGV History 101: A Brief History of Unmanned Ground Vehicle (UGV) Development Efforts. Unman Syst Mag. 1995;13(3):1-9. \b\fs32\par
+\b0\fs22 2. Yin, C., Jiang, Y., & Zhang, L. (2020). "Design of a Lightweight and Robust Mounting System for Autonomous Vehicles." Journal of Field Robotics, 37(2), 192-207. {{\field{\*\fldinst{HYPERLINK https://doi.org/10.1002/rob.21913 }}{\fldrslt{https://doi.org/10.1002/rob.21913\ul0\cf0}}}}\f1\fs22 .\par
+3. Schwarz, C., Klingbeil, U., & Stachniss, C. (2019). "Designing Modular Sensor Integration Systems for Autonomous Robots." Robotics and Autonomous Systems, 113, 124-136. {{\field{\*\fldinst{HYPERLINK https://doi.org/10.1016/j.robot.2018.11.007 }}{\fldrslt{https://doi.org/10.1016/j.robot.2018.11.007\ul0\cf0}}}}\f1\fs22\par
+4. Roger Bostelman, Elena Messina Intelligent Systems Division, Engineering Laboratory National Institute of Standards and Technology Gaithersburg, MD, 20899-8230, USA roger.bostelman, elena.messina@nist.gov.\par
+5. AgileX Ranger 4WS 4WD UGV Manual. AgileX Robotics. Retrieved from: {{\field{\*\fldinst{HYPERLINK https://www.agilexrobotics.com }}{\fldrslt{https://www.agilexrobotics.com\ul0\cf0}}}}\f1\fs22\par
+6.Open source {{\field{\*\fldinst{HYPERLINK https://www.ibm.com/think/topics/lidar }}{\fldrslt{https://www.ibm.com/think/topics/lidar\ul0\cf0}}}}\f1\fs22\par
+7 .Shah, M., & Lippiello, V. (2020). LIDAR Sensors for Autonomous Navigation: A Review. IEEE Transactions on Robotics, 36(4), 987-1004.\par
+8.  Dassault Syst\'e8mes. (2020). SolidWorks: 3D CAD design software. Retrieved from {{\field{\*\fldinst{HYPERLINK https://www.solidworks.com/ }}{\fldrslt{https://www.solidworks.com/\ul0\cf0}}}}\f1\fs22\par
+\par
+\par
+\b\fs32\par
+\b0\fs22\par
+}
+ 
